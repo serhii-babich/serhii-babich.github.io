@@ -8,7 +8,7 @@ theme = "winston"
   tag = 'tags'
 [params]
   google_analytics_id = ""
-  twitter_handle = "@zerostaticio"
+  twitter_handle = "@babichss"
   showAuthorOnHomepage = false
   showAuthorOnPosts = true
   showPostsOnHomepage = true

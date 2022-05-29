@@ -1,0 +1,71 @@
+
+:root {
+  --highlight-color:#1976D2;
+  --font-family-heading: Montserrat;
+  --font-family-paragraph: Rubik;
+  --font-family-monospace: JetBrains Mono, monospace;
+  --link-color: #311B92
+}
+
+html {
+  font-size: 16pt;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.intro h1 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+pre {
+  padding: 12px;
+  background-color: black;
+  color: antiquewhite;
+  overflow: scroll;
+  overflow: overlay;
+}
+
+.content {
+  font-size: inherit;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.content p {
+  font-size: inherit;
+}
+
+.content ul, .content ol {
+  margin-left: 0;
+}
+
+.content ul li, .content ol li {
+  font-size: inherit;
+  line-height: 1.6;
+}
+
+.content ul li {
+  list-style: circle;
+}
+
+.content ol li {
+  list-style: decimal;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12pt;
+  }
+  body.frame {
+    border-width: 9px;
+  }
+  .content ul,.content ol {
+    margin-left: 16px;
+  }
+}

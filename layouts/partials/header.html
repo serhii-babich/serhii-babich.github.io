@@ -1,20 +1,21 @@
-<div class='header'>
-  {{ $section := .Section }}
+{{ $section := .Section }}
   {{if $section}}
+<div class='header'>
+  
   <a class="header-logo" href="{{ .Site.BaseURL }}">На головну сторінку</a>
-  {{end}}
-
-  <div class="menu-main">
+  
+  <!--  <div class="menu-main">
     <ul>
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-            <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-                <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-            </li>
-        {{end}}
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      </li>
+      {{end}}
     </ul>
   </div>
   <div id="toggle-menu-main-mobile" class="hamburger-trigger">
     <button class="hamburger">Menu</button>
-  </div>
+  </div> -->
 </div>
+{{end}}

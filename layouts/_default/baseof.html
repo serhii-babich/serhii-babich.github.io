@@ -32,6 +32,15 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@800&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   {{ $override := resources.Get "override.css" }}
   <link href="{{ $override.Permalink }}" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVMXZSTYSD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MVMXZSTYSD');
+  </script>
 </head>
 
 {{ $themeStyle := slice "" }}

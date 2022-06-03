@@ -1,13 +1,13 @@
 baseURL = "https://sergiybabich.github.io/"
-languageCode = "en-us"
+languageCode = "uk-UA"
 title = "Сергій Бабіч"
 image = "123"
 theme = "winston"
+googleAnalytics = "G-MVMXZSTYSD"
 [taxonomies]
   category = 'categories'
   tag = 'tags'
 [params]
-  google_analytics_id = ""
   twitter_handle = "@babichss"
   showAuthorOnHomepage = false
   showAuthorOnPosts = true

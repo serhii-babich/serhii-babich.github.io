@@ -1,7 +1,6 @@
 baseURL = "https://sergiybabich.github.io/"
 languageCode = "uk-UA"
 title = "Сергій Бабіч"
-image = "123"
 theme = "winston"
 googleAnalytics = "G-MVMXZSTYSD"
 [taxonomies]

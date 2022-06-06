@@ -1,20 +1,18 @@
 {{ $isHome := .Page.IsHome }}
-{{ $isAbout := eq .Params.id "about" }}
+{{ $isDonationsPage := eq .Params.id "donations" }}
 <header class='header'>
   
   {{if not $isHome}}
   <a class="header-logo" href="{{ .Site.BaseURL }}">На головну сторінку</a>
   {{end}}
-  {{if not $isAbout}}
+  {{if not $isDonationsPage}}
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     
-      <a href="{{ .URL | relLangURL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
+      <a href="{{ .URL | relLangURL }}" class="header-logo {{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
     
     {{end}}
   {{end}}
 
-  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
-    <button class="hamburger">Menu</button>
-  </div>
+  
 </header>

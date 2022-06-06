@@ -1,10 +1,9 @@
-
 :root {
-  --highlight-color:#1976D2;
+  --highlight-color: #1976d2;
   --font-family-heading: Montserrat;
   --font-family-paragraph: Rubik;
   --font-family-monospace: JetBrains Mono, monospace;
-  --link-color: #311B92
+  --link-color: #311b92;
 }
 
 html {
@@ -41,21 +40,42 @@ pre {
   font-size: inherit;
 }
 
-.content ul, .content ol {
+.content ul,
+.content ol {
   margin-left: 0;
 }
 
-.content ul li, .content ol li {
+.content ul li,
+.content ol li {
   font-size: inherit;
   line-height: 1.6;
 }
 
 .content ul li {
-  list-style: circle;
+  list-style: disc;
 }
 
 .content ol li {
   list-style: decimal;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.content .icon {
+  margin: 0;
+  width: 24px;
+}
+
+.header a.header-logo {
+  margin: 0;
+}
+
+.content li a {
+  display: inline-block;
 }
 
 @media screen and (max-width: 480px) {
@@ -65,7 +85,8 @@ pre {
   body.frame {
     border-width: 9px;
   }
-  .content ul,.content ol {
+  .content ul,
+  .content ol {
     margin-left: 16px;
   }
 }

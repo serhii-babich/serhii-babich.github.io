@@ -13,5 +13,7 @@ googleAnalytics = "G-MVMXZSTYSD"
   showPostsOnHomepage = true
   addFrame = true
   addDot = true
-
-  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

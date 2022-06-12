@@ -78,15 +78,18 @@ pre {
   display: inline-block;
 }
 
+
+@media screen and (max-width: 800px) {
+  .content ul,
+  .content ol {
+    margin-left: 1rem;
+  }
+}
 @media screen and (max-width: 480px) {
   html {
     font-size: 12pt;
   }
   body.frame {
     border-width: 9px;
-  }
-  .content ul,
-  .content ol {
-    margin-left: 16px;
   }
 }

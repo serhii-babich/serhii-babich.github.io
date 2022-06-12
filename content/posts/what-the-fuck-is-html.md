@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Шо то ше за HTML?!"
 date: 2022-06-12T12:00:00+03:00
 type: posts

@@ -36,6 +36,11 @@ pre {
   line-height: 1.2;
 }
 
+.content h3 {
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
 .content p {
   font-size: inherit;
 }

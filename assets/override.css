@@ -100,6 +100,75 @@ pre {
   padding: 1rem;
 }
 
+.hero-link {
+  display: flex;
+  align-items: center;
+  gap:16px
+}
+
+.hero-link img {
+  width: 16px;
+}
+
+.hero-link span {
+  position: relative;
+}
+.hero-link span::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 24px;
+  aspect-ratio: 1;
+  background-image: url("/images/external.svg");
+  background-size: contain;
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  gap: 16px
+}
+
+.content .with-icon img {
+  margin: 0;
+}
+
+.content .brigade-logo {
+  width: 256px;
+  float: right;
+  margin: 0;
+  margin-left: 32px;
+  border-radius: 50%;
+   box-shadow: rgba(0, 0, 0, 0.5) 0 2px 0;
+}
+
+.camo-text {
+  background-image: url("/images/camo.webp");
+  background-size: 512px;
+  padding: 32px;
+  color: white;
+  text-shadow: 0 2px 0 black;
+  position: relative;
+}
+
+.camo-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent,rgba(0,0,0,0.75));
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.camo-text span, .camo-text img {
+  position: relative;
+  z-index: 1;
+}
+
+
 @media screen and (max-width: 800px) {
   .content ul,
   .content ol {
@@ -110,6 +179,7 @@ pre {
   html {
     font-size: 12pt;
   }
+
   body.frame {
     border-width: 9px;
   }
@@ -117,4 +187,27 @@ pre {
   .content .highlight pre {
     overflow: overlay;
   }
+
+  .hero-link img {
+    width: 32px;
+  }
+
+  .hero-link span::after {
+    width: 16px;
+  }
+
+  .camo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .brigade-logo {
+    width: auto;
+    float: none;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  
+
 }

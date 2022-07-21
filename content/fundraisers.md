@@ -5,6 +5,7 @@ menu:
   main:
     name: "Коштозбори"
 ogimage: images/ogimagefundraiser.jpg
+description: Коштозбір для Першої Окремої Бригади Спеціального Призначення ім. Івана Богуна — сторінка з реквізитами та списком поточних потреб.
 ---
 
 <h2 class="camo-text">

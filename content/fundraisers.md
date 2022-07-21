@@ -1,10 +1,10 @@
-
 ---
 title: "Коштозбори"
 id: donations
 menu:
   main:
     name: "Коштозбори"
+ogimage: images/ogimagefundraiser.jpg
 ---
 
 <h2 class="camo-text">

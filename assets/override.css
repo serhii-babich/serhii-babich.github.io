@@ -4,10 +4,12 @@
   --font-family-paragraph: Rubik;
   --font-family-monospace: JetBrains Mono, monospace;
   --link-color: #311b92;
+  --text-color: #333;
 }
 
 html {
   font-size: 16pt;
+  color: var(--text-color);
 }
 
 a {
@@ -210,4 +212,67 @@ pre {
   }
   
 
+}
+
+.tooltip {
+  cursor: default;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px dashed #000;
+  position: relative;
+}
+
+.tooltip::after {
+  content: "?";
+  position: absolute;
+  font-size: 0.5em;
+  right: 0;
+  translate: 50%;
+  font-weight: 600;
+}
+
+.tooltip:hover {
+  background-color: #333;
+  color: white;
+}
+
+.pavlova--virtual-title {
+  text-align: center;
+  font-weight: 800;
+  margin: 20px;
+}
+
+p.big-text {
+  font-size: 1.5em;
+}
+
+.pavlova--virtual-title  p {
+  margin: 0;
+}
+
+.popover {
+  box-sizing: border-box;
+  width: max-content;
+  position: absolute;
+  font-size: 0.9rem;
+  background-color: aliceblue;
+  padding: 0.6em;
+  border: 2px solid var(--highlight-color);
+  box-shadow: 0 3px 10px black;
+  z-index: 999;
+  left: 50%;
+  bottom: 100%;
+}
+
+p.popover-content {
+  max-width: 360px;
+  margin: 0;
+  font-size: 0.75em;
+  font-family: var(--font-family-monospace);
+}
+
+@media screen and (max-width: 480px) {
+  .popover {
+    max-width: calc(100vw - 18px);
+  }
 }

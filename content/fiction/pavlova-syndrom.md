@@ -6,6 +6,8 @@ date: 2022-05-29T12:00:00+03:00
 
 type: fiction
 
+ogimage: images/pavlova-preview.png
+
 ---
 
 <script src="/tooltip.js" defer></script>

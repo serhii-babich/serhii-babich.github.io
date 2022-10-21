@@ -33,7 +33,6 @@ function detectCollision(element, rect) {
       document.documentElement.clientWidth -
       (tooltipRect.left + tooltipRect.width + x) -
       borderWidth;
-    console.log({ x, dX });
     translate = `translateX(${x + dX}px)`;
   }
 
@@ -85,7 +84,6 @@ if (!!navigator.maxTouchPoints) {
   document.addEventListener("mouseover", (event) => {
     if (!event.target.classList?.contains("tooltip")) return;
     event.preventDefault();
-    console.log("mouseover");
     showTooltip(event.target);
   });
 
